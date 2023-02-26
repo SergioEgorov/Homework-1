@@ -7,7 +7,7 @@
 // (не должно быть так, что всё залито одним коммитом, как минимум этапы 2, 3, и 4 
 // должны быть расположены в разных коммитах)
 
-string[] arrayStart = new string[ ] { "1234", "1567", "-2", "computer science"};
+string[] arrayStart = new string[ ] { "12", "Sergey", "Russia", "-2"};
 string[] arrayEnd = new string[arrayStart.Length];
 int count = 0;
 for (int i = 0; i < arrayStart.Length; i++)
