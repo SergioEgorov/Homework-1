@@ -7,3 +7,16 @@
 // (не должно быть так, что всё залито одним коммитом, как минимум этапы 2, 3, и 4 
 // должны быть расположены в разных коммитах)
 
+string[] arrayStart = new string[ ] { "1234", "1567", "-2", "computer science"};
+string[] arrayEnd = new string[arrayStart.Length];
+int count = 0;
+for (int i = 0; i < arrayStart.Length; i++)
+{
+    if (arrayStart[i].Length <= 3)
+    {
+        arrayEnd[count] = arrayStart[i];
+        count++;
+    }
+}
+Console.WriteLine($"Заданный массив: [{string.Join(", ", arrayStart)}]");
+Console.WriteLine($"Полученный массив: [{string.Join(" ", arrayEnd)}]");
